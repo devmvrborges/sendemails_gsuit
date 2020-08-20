@@ -3,8 +3,8 @@ function enviarEmail() {
   var startRow = 2; // Linha de inicio (desconsiderar titulos, rotulos, etc)
   var numRows = 3; // Quantidade de linhas que irá percorrer o script
   
-  // Faz um filtro dos valores e popula a variavel "dataRange" 
-  var dataRange = sheet.getRange(startRow, 1, numRows, 2);
+  // Faz um filtro dos valores e popula a variavel "dataRange" com as colunas "Email", "Mensagem", "Assunto"
+  var dataRange = sheet.getRange(startRow, 1, numRows, 3);
   
   // Transforma esses valores em um formato de lista para podermos utilizar um loop for
   var data = dataRange.getValues();
